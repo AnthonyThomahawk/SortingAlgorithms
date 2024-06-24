@@ -9,9 +9,7 @@ public class Main {
         System.out.println("]");
     }
 
-    public static void main(String[] args) {
-        int arr[] = {1,4,5,3,2,10,12,17,51,22};
-
+    public static void demoBubbleSort(int[] arr) {
         System.out.println("Bubble sort demo : ");
         System.out.println("Unsorted array :");
         printArr(arr);
@@ -23,5 +21,11 @@ public class Main {
         System.out.println("Sorted array (optimal) :");
         printArr(bubbleSortedOptimal);
         System.out.println("Operations done : " + BubbleSort.operations);
+    }
+
+    public static void main(String[] args) {
+        int arr[] = {1,4,5,3,2,10,12,17,51,22};
+
+        demoBubbleSort(arr);
     }
 }
