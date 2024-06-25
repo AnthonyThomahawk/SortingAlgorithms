@@ -2,8 +2,9 @@
 This is my repository where I implement a variety of sorting algorithms in either Java or C++.
 I also keep notes in this README.md about time complexity and other notes about each algorithm.
 # Bubble sort
-## Description
-Bubble sort is probably the simplest sorting algorithm, it involves swapping each adjacent element until the array is sorted. The array is sorted when no more swaps of adjacent elements is needed.
+## Description :
+Bubble sort is probably the simplest sorting algorithm, it involves swapping each adjacent element until the array is sorted. Each pass swaps an element with its adjacent one, if the element is greater than its adjacent one, so we end up with all the large elements at the end of the array, hence where the name "bubble" comes from, because the large elements "float" towards the end of the array like bubbles.
+The array is sorted when no more swaps of adjacent elements is needed.
 ## Visualization :
 ![bubblesort](bubble_sort.png)
 ## Time complexity :
