@@ -11,7 +11,7 @@ public class Main {
 
     public static void demoBubbleSort(int[] arr) {
         System.out.println("Bubble sort demo : ");
-        System.out.println("Unsorted array :");
+        System.out.println("Unsorted array : ");
         printArr(arr);
         int bubbleSorted[] = BubbleSort.sortArray(arr);
         System.out.println("Sorted array (unoptimal) :");
@@ -23,9 +23,19 @@ public class Main {
         System.out.println("Operations done : " + BubbleSort.operations);
     }
 
+    public static void demoSelectionSort(int[] arr) {
+        System.out.println("Selection sort demo : ");
+        System.out.println("Unsorted array : ");
+        printArr(arr);
+        int selectionSorted[] = SelectionSort.sortArray(arr);
+        System.out.println("Sorted array : ");
+        printArr(selectionSorted);
+        System.out.println("Operations done : " + SelectionSort.operations);
+    }
+
     public static void main(String[] args) {
         int arr[] = {1,4,5,3,2,6,9,8,7};
 
-        demoBubbleSort(arr);
+        demoSelectionSort(arr);
     }
 }
