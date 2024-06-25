@@ -1,5 +1,5 @@
 # Sorting algorithms
-This is my repository where I implement a variety of sorting algorithms in either Java or C++.
+This is my repository where I implement a variety of sorting algorithms in Java.
 I also keep notes in this README.md about time complexity and other notes about each algorithm.
 # Bubble sort
 ## Description :
@@ -16,7 +16,7 @@ It is implemented in [BubbleSort.java](src/main/java/com/sorting/BubbleSort.java
 The difference between the two is that the optimized method stops when there are no swaps done within a pass, while the unoptimized one continues until there are no passes left.
 # Selection sort
 ## Description :
-Selection sort is a sorting algorithm that sorts arrays by placing the smallest elements at the beginning, kind of the opposite of [Bubble sort](#bubble-sort). The algorithms start by finding the smallest element of the array, and places it at the beginning. The next pass, we find the smallest element again BUT we start looking from index 1, since index 0 is sorted. In subsequent passes, we do the exact same incrementing the range of our lookup for the minimum element by 1, that way the array gets sorted. 
+Selection sort is a sorting algorithm that sorts arrays by placing the smallest elements at the beginning, kind of the opposite of [Bubble sort](#bubble-sort). The algorithm start by finding the smallest element of the array, and places it at the beginning. The next pass, we find the smallest element again BUT we start looking from index 1, since index 0 is sorted. In subsequent passes, we do the exact same incrementing the range of our lookup for the minimum element by 1, that way the array gets sorted. 
 ## Time complexity :
 O(n^2)
 ## Space complexity :
