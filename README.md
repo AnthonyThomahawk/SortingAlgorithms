@@ -11,7 +11,7 @@ To compile and run this project, Maven is required. After you install maven on y
 ```
 mvn clean compile exec:java
 ```
-![screenshot](screenshot.png)
+![screenshot](screenshot2.png)
 
 # Bubble sort
 ## Description :
