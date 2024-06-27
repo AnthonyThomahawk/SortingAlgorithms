@@ -7,33 +7,31 @@ public class BubbleSort {
 
     public static int[] sortArray(int[] arr) {
         operations = 0;
-        int[] sorted = Arrays.copyOf(arr, arr.length);
 
-        for (int i = 0; i < sorted.length - 1; i++) {
-            for (int j = 0; j < sorted.length - i - 1; j++) {
-                int tmp = sorted[j];
-                if (sorted[j] > sorted[j+1]) {
-                    sorted[j] = sorted[j+1];
-                    sorted[j+1] = tmp;
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = 0; j < arr.length - i - 1; j++) {
+                int tmp = arr[j];
+                if (arr[j] > arr[j+1]) {
+                    arr[j] = arr[j+1];
+                    arr[j+1] = tmp;
                 }
                 operations++;
             }
         }
 
-        return sorted;
+        return arr;
     }
 
     public static int[] sortArrayOptimal(int[] arr) {
         operations = 0;
-        int[] sorted = Arrays.copyOf(arr, arr.length);
         boolean swapped;
-        for (int i = 0; i < sorted.length - 1; i++) {
+        for (int i = 0; i < arr.length - 1; i++) {
             swapped = false;
-            for (int j = 0; j < sorted.length - i - 1; j++) {
-                int tmp = sorted[j];
-                if (sorted[j] > sorted[j+1]) {
-                    sorted[j] = sorted[j+1];
-                    sorted[j+1] = tmp;
+            for (int j = 0; j < arr.length - i - 1; j++) {
+                int tmp = arr[j];
+                if (arr[j] > arr[j+1]) {
+                    arr[j] = arr[j+1];
+                    arr[j+1] = tmp;
                     swapped = true;
                 }
                 operations++;
@@ -43,6 +41,6 @@ public class BubbleSort {
                 break;
         }
 
-        return sorted;
+        return arr;
     }
 }
