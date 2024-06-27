@@ -5,6 +5,14 @@ I also keep notes in this README.md about time complexity and other notes about 
 Each visualization of an algorithm is created with [Xournal++](https://xournalpp.github.io/) and the source files are available in [visSrc](visSrc/) folder.
 
 Run the [Main.java](src/main/java/com/sorting/Main.java) program to get a menu with a demo for all currently implemented algorithms. You can then run a demo by entering your choice as a number (for ex. type 1 for bubble sort.)
+
+## Running the SortingAlgorithms program
+To compile and run this project, Maven is required. After you install maven on your system, simply compile and run the project with :
+```
+mvn clean compile exec:java
+```
+![screenshot](screenshot.png)
+
 # Bubble sort
 ## Description :
 Bubble sort is probably the simplest sorting algorithm, it involves swapping each adjacent element until the array is sorted. Each pass swaps an element with its adjacent one, if the element is greater than its adjacent one, so we end up with all the large elements at the end of the array, hence where the name "bubble" comes from, because the large elements "float" towards the end of the array like bubbles.
