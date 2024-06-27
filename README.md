@@ -1,6 +1,8 @@
 # Sorting algorithms
 This is my repository where I implement a variety of sorting algorithms in Java.
 I also keep notes in this README.md about time complexity and other notes about each algorithm.
+
+Each visualization of an algorithm is created with [Xournal++](https://xournalpp.github.io/) and the source files are available in [visSrc](visSrc/) folder.
 # Bubble sort
 ## Description :
 Bubble sort is probably the simplest sorting algorithm, it involves swapping each adjacent element until the array is sorted. Each pass swaps an element with its adjacent one, if the element is greater than its adjacent one, so we end up with all the large elements at the end of the array, hence where the name "bubble" comes from, because the large elements "float" towards the end of the array like bubbles.
